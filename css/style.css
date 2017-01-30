@@ -1,6 +1,7 @@
 body{
 	margin:0px;
 	padding:0px;
+	font-family: sans-serif;
 }
 
 .container-fluid{
@@ -13,7 +14,8 @@ body{
 }
 
 .status-image{
-	width:20px;
+	width: 25px;
+    padding-right: 25px;
 }
 
 hr.dotted-line {
@@ -49,6 +51,7 @@ hr.dotted-line {
 
 .kvr-text {
 	text-align:right;
+	padding-right:30px;
 }
 
 .internal-temperature {
@@ -59,4 +62,12 @@ hr.dotted-line {
 }
 .online-text{
 	text-align: right;
+}
+.temp-prod-row {
+	text-align: center;
+    padding: 20px;
+}
+.temperature-production {
+    color: green;
+    font-weight: bold;
 }

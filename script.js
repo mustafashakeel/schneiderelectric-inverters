@@ -78,7 +78,9 @@ angular.module('DemoApp')
                                              ServiceMode_Grey:'icons/ServiceMode_Grey.svg',
                                              Spinner_White:'icons/Spinner_White.svg',
                                              ACHealth_Grey:'icons/ACHealth_Grey.svg',
-                                             online:'Online'
+                                             Online:'Online',Pdc:'1982.01',Pac:'1952.28',
+                                             Kvar:'0.00',InternalTemperature:'41.90',
+                                             DailyProduction:'95.06'
 
                                          }];
         messages.index = {};
