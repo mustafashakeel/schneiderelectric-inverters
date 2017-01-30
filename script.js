@@ -68,7 +68,19 @@ angular.module('DemoApp')
         if(!Config.useMocks) return;
  
         var messages = {};
-        messages.data = [{id: 1, text:'Hello World',conext:'Conext SmartGen 1',Spinner_Black:'icons/Spinner_Black.svg',ServiceMode_Grey:'icons/ServiceMode_Grey.svg',ACHealth_Grey:'icons/ACHealth_Grey.svg'}];
+        messages.data = [{id: 1, text:'Hello World',conext:'Conext SmartGen 1',Spinner_Black:'icons/Spinner_Black.svg',
+                                             ActivePowerLimit_Grey:'icons/ActivePowerLimit_Grey.svg',
+                                             DCHealth_Grey: 'icons/DCHealth_Grey.svg',
+                                             Derating_Grey: 'icons/Derating_Grey.svg',
+                                             Environment_Grey: 'icons/Environment_Grey.svg',
+                                             GroundFault_Grey: 'icons/GroundFault_Grey.svg',
+                                             ReactivePower_Grey:'icons/ReactivePower_Grey.svg',
+                                             ServiceMode_Grey:'icons/ServiceMode_Grey.svg',
+                                             Spinner_White:'icons/Spinner_White.svg',
+                                             ACHealth_Grey:'icons/ACHealth_Grey.svg',
+                                             online:'Online'
+
+                                         }];
         messages.index = {};
 
  

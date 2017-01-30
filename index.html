@@ -15,13 +15,30 @@
 
         <h2>Get by id: {{data2.conext}}</h2>
 
-        <div id="status"> <img class="status-image" ng-src="{{data2.Spinner_Black}}" /></div>
+        <div id="status"><img class="status-image" ng-src="{{data2.Spinner_White}}" />
+        <img class="status-image" ng-src="{{data2.Spinner_White}}" />
+         <img class="status-image" ng-src="{{data2.Spinner_Black}}" /></div>
+         <div class="online-text"><span>{{data2.online}}</span></div>
       
     </div>
+
   </div>
   <div class="row">
     <div class="icons">
-    <div class  ="icons-row"> <img class="status-image" ng-src="{{data2.ServiceMode_Grey}}" />
+    <div class="icons-row"> 
+
+     <img class="status-image" ng-src="{{data2.ACHealth_Grey}}" alt="">
+      <img class="status-image" ng-src="{{data2.DCHealth_Grey}}" alt="">
+     <img class="status-image" ng-src="{{data2.ActivePowerLimit_Grey}}" alt="">
+      
+  
+      <img class="status-image" ng-src="{{data2.Environment_Grey}}" alt="">
+  
+      <img class="status-image" ng-src="{{data2.ReactivePower_Grey}}" alt="">  
+ 
+      <img class="status-image" ng-src="{{data2.Derating_Grey}}" alt="">
+      <img class="status-image" ng-src="{{data2.GroundFault_Grey}}" alt="">
+    <img class="status-image" ng-src="{{data2.ServiceMode_Grey}}" />
       
     </div>
       <hr>
@@ -40,18 +57,31 @@
     <hr class="dotted-line">
 
     <div class="main-svg">
-      <svg width="100" height="100">
+      <svg width="75" height="75">
 
-  <rect width="100" height="100"  style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(0,0,0)">  </rect>
-<line x1="0" y1="100" x2="100" y2="0" fill="none" style="stroke:rgb(0,0,0);stroke-width:2">
- <img class="status-image" ng-src="{{data2.ACHealth_Grey}}" />
-  <img class="status-image" ng-src="{{data2.ACHealth_Grey}}" />
+  <rect width="75" height="75"  style="fill:rgb(255,255,255);stroke-width:5;stroke:rgb(0,0,0)">  </rect>
+<line x1="0" y1="75" x2="75" y2="0" fill="none" style="stroke:rgb(0,0,0);stroke-width:2">
+ <img class="center-image-1" ng-src="{{data2.DCHealth_Grey}}" />
+  <img class="center-image-2" ng-src="{{data2.ACHealth_Grey}}" />
 
 </svg>
     </div>
   </div>
-  
-    <p>Get all: {{data}}</p>
+  <div class="kvr-text">
+  <span>q <strong>0.00</strong> kvr</span>
+   
+  </div>
+
+<div class="row">
+  <div class="internal-temperature">
+ <span>Internal Temperature </span>
+ <span>41.90 &deg;C</span>
+</div>
+<div class="daily-production">
+ <span>Daily Production </span>
+ <span>95.06 kWh</span>
+</div>
+</div>    
     
 
       
@@ -61,7 +91,7 @@
 
 
   </div>
-
+ <!-- <p>Get all: {{data}}</p> -->
   </body>
 
 </html>

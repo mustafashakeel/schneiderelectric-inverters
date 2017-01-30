@@ -9,6 +9,7 @@ body{
 
 .header{
 	background: lightgreen;
+	padding:20px;
 }
 
 .status-image{
@@ -32,4 +33,30 @@ hr.dotted-line {
 }
 .pdc-pac{
 	padding:10px;
+}
+.center-image-1{
+	width: 40px;
+    position: relative;
+    top: -35px;
+    left: -70px;
+}
+.center-image-2 {
+	width: 40px;
+    position: relative;
+    top: -5px;
+    left: -85px;
+}
+
+.kvr-text {
+	text-align:right;
+}
+
+.internal-temperature {
+	float:left;
+}
+.daily-production {
+	float:right;
+}
+.online-text{
+	text-align: right;
 }
