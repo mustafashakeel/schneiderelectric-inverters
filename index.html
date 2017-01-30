@@ -1,97 +1,69 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <script data-require="angular.js@1.2.4" data-semver="1.2.4" src="//code.angularjs.org/1.2.3/angular.js"></script>
     <script data-require="angular-mocks@*" data-semver="1.2.3" src="//code.angularjs.org/1.2.3/angular-mocks.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js"></script>
   </head>
-
   <body ng-app="DemoApp" ng-controller="DemoCtrl">
-  <div class="container-fluid">
-  <div class="row">
-    <div class="header">
-
-        <h2> {{data2.conext}}</h2>
-
-        <div id="status"><img class="status-image" ng-src="{{data2.Spinner_White}}" />
-        <img class="status-image" ng-src="{{data2.Spinner_White}}" />
-         <img class="status-image" ng-src="{{data2.Spinner_Black}}" /></div>
-         <div class="online-text"><span>{{data2.Online}}</span></div>
-      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header">
+            <h2> {{data2.conext}}</h2>
+            <div id="status"><img class="status-image" ng-src="{{data2.Spinner_White}}" />
+            <img class="status-image" ng-src="{{data2.Spinner_White}}" />
+             <img class="status-image" ng-src="{{data2.Spinner_Black}}" /></div>
+             <div class="online-text"><span>{{data2.Online}}</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icons">
+          <div class="icons-row"> 
+            <img class="status-image" ng-src="{{data2.ACHealth_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.DCHealth_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.ActivePowerLimit_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.Environment_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.ReactivePower_Grey}}" alt="">  
+            <img class="status-image" ng-src="{{data2.Derating_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.GroundFault_Grey}}" alt="">
+            <img class="status-image" ng-src="{{data2.ServiceMode_Grey}}" />  
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="main">
+          <div class="row">
+            <div class="pdc-pac">
+              <span class="pdc"> pdc: {{data2.Pdc}}</span>
+              <span class="pac">pac :{{data2.Pac}}</span>    
+            </div>
+            <hr class="dotted-line">
+            <div class="main-svg">
+            <svg width="75" height="75">
+              <rect width="75" height="75"  style="fill:rgb(255,255,255);stroke-width:5;stroke:rgb(0,0,0)">  </rect>
+              <line x1="0" y1="75" x2="75" y2="0" fill="none" style="stroke:rgb(0,0,0);stroke-width:2" />
+              <img class="center-image-1" ng-src="{{data2.DCHealth_Grey}}" />
+              <img class="center-image-2" ng-src="{{data2.ACHealth_Grey}}" />
+            </svg>
+          </div>
+        </div>
+      <div class="kvr-text">
+        <span>Q <strong> {{data2.Kvar}}</strong> kvr</span>
+      </div>
+      <div class="row temp-prod-row">
+        <div class="internal-temperature">
+         <span>Internal Temperature </span><br/>
+         <span class="temperature-production">{{data2.InternalTemperature}} &deg;C</span>
+        </div>
+        <div class="daily-production">
+          <span>Daily Production </span><br/>
+          <span class="temperature-production">{{data2.DailyProduction}}kWh</span>
+        </div>
+      </div>    
     </div>
-
   </div>
-  <div class="row">
-    <div class="icons">
-    <div class="icons-row"> 
-
-     <img class="status-image" ng-src="{{data2.ACHealth_Grey}}" alt="">
-      <img class="status-image" ng-src="{{data2.DCHealth_Grey}}" alt="">
-     <img class="status-image" ng-src="{{data2.ActivePowerLimit_Grey}}" alt="">
-      
-  
-      <img class="status-image" ng-src="{{data2.Environment_Grey}}" alt="">
-  
-      <img class="status-image" ng-src="{{data2.ReactivePower_Grey}}" alt="">  
- 
-      <img class="status-image" ng-src="{{data2.Derating_Grey}}" alt="">
-      <img class="status-image" ng-src="{{data2.GroundFault_Grey}}" alt="">
-    <img class="status-image" ng-src="{{data2.ServiceMode_Grey}}" />
-      
-    </div>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="main">
-
-  <div class="row">
-  <div class="pdc-pac">
-    <span class="pdc"> pdc: {{data2.Pdc}}</span>
-    <span class="pac">pac :{{data2.Pac}}</span>    
-  </div>
-
-
-    <hr class="dotted-line">
-
-    <div class="main-svg">
-      <svg width="75" height="75">
-
-  <rect width="75" height="75"  style="fill:rgb(255,255,255);stroke-width:5;stroke:rgb(0,0,0)">  </rect>
-<line x1="0" y1="75" x2="75" y2="0" fill="none" style="stroke:rgb(0,0,0);stroke-width:2">
- <img class="center-image-1" ng-src="{{data2.DCHealth_Grey}}" />
-  <img class="center-image-2" ng-src="{{data2.ACHealth_Grey}}" />
-
-</svg>
-    </div>
-  </div>
-  <div class="kvr-text">
-  <span>Q <strong> {{data2.Kvar}}</strong> kvr</span>
-   
-  </div>
-
-<div class="row temp-prod-row">
-  <div class="internal-temperature">
- <span>Internal Temperature </span><br/>
- <span class="temperature-production">{{data2.InternalTemperature}} &deg;C</span>
-</div>
-<div class="daily-production">
- <span>Daily Production </span><br/>
- <span class="temperature-production">{{data2.DailyProduction}}kWh</span>
-</div>
-</div>    
-    
-
-      
-    </div>
-    
-  </div>
-
-
-  </div>
- <!-- <p>Get all: {{data}}</p> -->
-  </body>
+</body>
 
 </html>

@@ -24,8 +24,6 @@ angular.module('DemoApp')
             host:               'api.example.com',
             port:               '3000',
             path:               '/api'
-            // ,
-            // fakeDelay:          1000
         }
     })
     .config(function(Config, $provide) {
@@ -45,9 +43,6 @@ angular.module('DemoApp')
                     var deferred = $q.defer();
  
                     if(response.config.url.indexOf(Config.view_dir) == 0) return response; //Let through views immideately
- 
-                    //Fake delay on response from APIs and other urls
-                    //$log.log('Delaying response with ' + Config.API.fakeDelay + 'ms');
                     $timeout(function () {
                         deferred.resolve(response);
                     }, Config.API.fakeDelay);

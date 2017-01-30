@@ -3,32 +3,26 @@ body{
 	padding:0px;
 	font-family: sans-serif;
 }
-
 .container-fluid{
 	margin-top:-20px;
 }
-
 .header{
 	background: lightgreen;
 	padding:20px;
 }
-
 .status-image{
 	width: 25px;
     padding-right: 25px;
 }
-
 hr.dotted-line {
 	border-top: 1px dashed #8c8b8b;
 }
-
 .main-svg {
-	    margin-left: 45%;
+	margin-left: 45%;
     margin-top: -45px;
 }
 .pac{
 	float:right;
-
 }
 .icons-row {
 	padding:10px;
