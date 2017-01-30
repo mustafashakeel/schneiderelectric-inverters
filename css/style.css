@@ -1,0 +1,35 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+.container-fluid{
+	margin-top:-20px;
+}
+
+.header{
+	background: lightgreen;
+}
+
+.status-image{
+	width:20px;
+}
+
+hr.dotted-line {
+	border-top: 1px dashed #8c8b8b;
+}
+
+.main-svg {
+	    margin-left: 45%;
+    margin-top: -45px;
+}
+.pac{
+	float:right;
+
+}
+.icons-row {
+	padding:10px;
+}
+.pdc-pac{
+	padding:10px;
+}
